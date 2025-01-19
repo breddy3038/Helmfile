@@ -1,0 +1,9 @@
+replicaCount: 5
+image:
+  repository: nginx
+  tag: "1.23.1-prod"
+service:
+  type: LoadBalancer
+  port: 80
+config:
+  exampleKey: "prodValue"

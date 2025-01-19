@@ -1,0 +1,10 @@
+repositories:
+  - name: my-repo
+    url: https://charts.helm.sh/stable
+
+releases:
+  - name: app
+    namespace: default
+    chart: ./apps/app
+    values:
+      - ./environments/{{ .Environment.Name }}.yaml

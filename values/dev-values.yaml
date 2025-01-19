@@ -1,0 +1,8 @@
+# values/dev-values.yaml
+replicaCount: 2
+image:
+  repository: nginx
+  tag: "1.21.0"
+service:
+  type: ClusterIP
+  port: 80
